@@ -8,7 +8,38 @@ module.exports = {
   moduleNameMapper: {
     // Handle ts path aliases
     '^@/(.*)$': `${projectRoot}/src/$1`,
+
+    // https://jestjs.io/docs/webpack#handling-static-assets
+    '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.js',
   },
+  transform: {
+    // Handle image imports
+    '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/fileTransformer.js',
+    // Use babel-jest to transpile tests with the babel presets
+    '^.+\\.(js|jsx|ts|tsx)$': [
+      'babel-jest',
+      {
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              targets: {
+                node: 'current',
+              },
+            },
+          ],
+          [
+            '@babel/preset-react',
+            {
+              runtime: 'automatic',
+            },
+          ],
+          '@babel/preset-typescript',
+        ],
+      },
+    ],
+  },
+  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   snapshotResolver: './snapshotResolver.js',
   coverageDirectory: '<rootDir>/coverage',
