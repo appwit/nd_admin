@@ -1,7 +1,12 @@
+import { ThemeProvider } from '@/core/theme'
 import { LoginPage } from '@/login/components'
 
-function App() {
-  return <LoginPage />
+const App: React.FC = () => {
+  return (
+    <ThemeProvider>
+      <LoginPage />
+    </ThemeProvider>
+  )
 }
 
 export default App

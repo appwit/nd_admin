@@ -19,10 +19,16 @@ export const useStyles = createStyles((theme) => ({
     },
   },
   rightCol: {
+    padding: 0,
+  },
+  formContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     padding: theme.spacing.sm,
+    height: '100%',
+    width: '100%',
+    borderRadius: 0,
   },
 }))
