@@ -30,7 +30,7 @@ const LoginForm: React.FC = () => {
   }
 
   return (
-    <Form<FormFields> onSubmit={onSubmit} data-testid="loginForm">
+    <Form<FormFields> onSubmit={onSubmit} data-testid="loginForm" style={{ width: '100%' }}>
       <FormControl<FormFields>
         name="email"
         defaultValue=""

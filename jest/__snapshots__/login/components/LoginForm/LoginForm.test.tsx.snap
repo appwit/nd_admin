@@ -5,6 +5,7 @@ exports[`LoginForm component renders LoginForm correctly 1`] = `
   <div
     class="mantine-Container-root mantine-1haweco"
     data-testid="loginForm"
+    style="width: 100%;"
   >
     <form
       novalidate=""
