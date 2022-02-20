@@ -1,10 +1,7 @@
-import { Button } from '@mantine/core'
-import { useState } from 'react'
+import { LoginPage } from '@/login/components'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return <Button onClick={() => setCount((count) => count + 1)}>count is: {count}</Button>
+  return <LoginPage />
 }
 
 export default App

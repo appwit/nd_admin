@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders Form correctly 1`] = `
+<div>
+  <div
+    class="mantine-Container-root mantine-1haweco"
+  >
+    <form
+      novalidate=""
+    >
+      Test children
+    </form>
+  </div>
+</div>
+`;
