@@ -47,6 +47,10 @@ const theme: MantineThemeOverride = {
   },
   primaryColor: 'primary',
   datesLocale: 'es-mx',
+  other: {
+    headerHeight: 60,
+    navbarWidth: 260,
+  },
 }
 
 export default theme

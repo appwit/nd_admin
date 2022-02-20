@@ -1,10 +1,10 @@
 import { ThemeProvider } from '@/core/theme'
-import { LoginPage } from '@/login/components'
+import { Dashboard } from '@/dashboard/components'
 
 const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <LoginPage />
+      <Dashboard />
     </ThemeProvider>
   )
 }

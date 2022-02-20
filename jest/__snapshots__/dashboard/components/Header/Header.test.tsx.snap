@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header correctly 1`] = `
+<DocumentFragment>
+  <nav
+    class="mantine-Header-root mantine-ivb4xo"
+  >
+    <div
+      class="mantine-ii1tq8"
+    >
+      <button
+        class="mantine-Burger-root mantine-MediaQuery-media mantine-lsm7yz"
+        type="button"
+      >
+        <div
+          class="mantine-Burger-burger mantine-ref_opened_1 mantine-Burger-opened mantine-e1z0um"
+        />
+      </button>
+      <div
+        class="mantine-Text-root mantine-1cau8qt"
+      >
+        Application header
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
