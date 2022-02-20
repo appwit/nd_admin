@@ -1,5 +1,5 @@
 import type { ColorScheme } from '@mantine/core'
-import { ColorSchemeProvider, MantineProvider } from '@mantine/core'
+import { ColorSchemeProvider, MantineProvider, TypographyStylesProvider } from '@mantine/core'
 import { useColorScheme, useLocalStorageValue } from '@mantine/hooks'
 
 import theme, { overrides } from '@/core/theme'
@@ -18,8 +18,8 @@ const ThemeProvider: React.FC = ({ children }) => {
 
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-      <MantineProvider theme={{ ...theme, colorScheme }} styles={overrides}>
-        {children}
+      <MantineProvider withNormalizeCSS theme={{ ...theme, colorScheme }} styles={overrides}>
+        <TypographyStylesProvider>{children}</TypographyStylesProvider>
       </MantineProvider>
     </ColorSchemeProvider>
   )

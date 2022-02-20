@@ -2,7 +2,7 @@ import { Grid, Paper, Title } from '@mantine/core'
 
 import logo from '@/assets/icon.png'
 import { LoginForm } from '@/login/components'
-import { useStyles } from '@/login/components/LoginPage/styles'
+import { useStyles } from '@/login/components/LoginPage/LoginPage.styles'
 
 const LoginPage: React.FC = () => {
   const { classes } = useStyles()

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard component renders Dashboard correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="mantine-AppShell-root mantine-10gv6g4"
+  >
+    <nav
+      class="mantine-Header-root mantine-ivb4xo"
+    >
+      <div
+        class="mantine-ii1tq8"
+      >
+        <button
+          class="mantine-Burger-root mantine-MediaQuery-media mantine-lsm7yz"
+          type="button"
+        >
+          <div
+            class="mantine-rwyne5 mantine-Burger-burger"
+          />
+        </button>
+        <div
+          class="mantine-Text-root mantine-1cau8qt"
+        >
+          Application header
+        </div>
+      </div>
+    </nav>
+    <div
+      class="mantine-ibbm6b mantine-AppShell-body"
+    >
+      <nav
+        class="mantine-Navbar-root mantine-Navbar-hidden mantine-13tjovm"
+        style="transition-property: transform, opacity; transition-duration: 400ms; transition-timing-function: ease; transform-origin: top; opacity: 1; transform: translateY(0);"
+      >
+        <div
+          class="mantine-1of7gg3"
+        >
+          BRANDING
+        </div>
+        <div
+          class="mantine-ScrollArea-root mantine-1j8al7h"
+          dir="ltr"
+          style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"
+        >
+          <style>
+            [data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}
+          </style>
+          <div
+            class="mantine-xlwgkm mantine-ScrollArea-viewport"
+            data-radix-scroll-area-viewport=""
+            style="overflow-x: scroll; overflow-y: scroll;"
+          >
+            <div
+              style="min-width: 100%; display: table;"
+            >
+              Scrollable content goeas here
+            </div>
+          </div>
+        </div>
+        <div
+          class="mantine-khtkeg"
+        >
+          NAVBAR FOOTER
+        </div>
+      </nav>
+      <main
+        class="mantine-idbiuw mantine-AppShell-main"
+      >
+        Content goes here
+      </main>
+    </div>
+  </div>
+</DocumentFragment>
+`;
